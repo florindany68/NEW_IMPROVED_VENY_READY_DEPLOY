@@ -16,7 +16,7 @@ import numpy as np
 
 
 
-logo_veny = 'VENY AI(6).png'
+logo_veny = 'veny_logo.png'
 
 col1, col2, col3 = st.columns([1, 1, 1])
 with col2:
