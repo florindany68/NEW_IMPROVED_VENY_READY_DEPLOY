@@ -12,21 +12,7 @@ from tensorflow.keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler
 import yfinance as yf
 import numpy as np
-from pathlib import Path
 
-
-
-
-
-
-logo_sidebar = 'VENY_AI(6).png'
-logo_veny = Path(__file__).resolve().parent / "VENY_AI.svg"
-
-col1, col2, col3 = st.columns([1, 1, 1])
-with col2:
-    st.image(logo_veny, width=300)
-
-st.logo(logo_veny, size='large',icon_image=logo_sidebar)
 st.title("Hi, I'm Veny! Your AI assistant for investing")
 st.markdown(" I'm your assistant to help you enter into the vast world of investing. Choose your level your risk to"
             "get the most appropriate companies for you. "
