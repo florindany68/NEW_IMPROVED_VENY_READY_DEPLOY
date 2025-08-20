@@ -16,8 +16,8 @@ import numpy as np
 
 
 
-logo_sidebar = '/home/danny/Desktop/001254746_FYP_Code 1/001254746_FYP_Code/gui/VENY_AI(6).png'
-logo_veny = '/home/danny/Desktop/001254746_FYP_Code 1/001254746_FYP_Code/gui/VENY_AI.svg'
+logo_sidebar = 'VENY_AI(6).png'
+logo_veny = 'VENY_AI.svg'
 
 col1, col2, col3 = st.columns([1, 1, 1])
 with col2:
@@ -37,14 +37,15 @@ st.markdown(" I'm your assistant to help you enter into the vast world of invest
 
 
 
-dataset_path = "/home/danny/Desktop/001254746_FYP_Code 1/001254746_FYP_Code/data/processed_file.csv"
-model_path = "/home/danny/Desktop/001254746_FYP_Code 1/001254746_FYP_Code/saved_models/RandomForest_modelMax.pkl"
-scaler_path = "/home/danny/Desktop/001254746_FYP_Code 1/001254746_FYP_Code/saved_models/feature_scalerRF_Max.pkl"
+dataset_path = "processed_file.csv"
+model_path = "RandomForest_modelMax.pkl"
+scaler_path = "feature_scalerRF_Max.pkl"
 id_columns  = ['Industry', 'Sector', 'Company','Symbol']
 exclude_columns = id_columns + ['Risk Category', 'Risk Score']
-LSTM_model_path = "/home/danny/Desktop/001254746_FYP_Code 1/001254746_FYP_Code/saved_models/LSTM_model_final.keras"
+
+LSTM_model_path = "LSTM_model_final.keras"
 prediction_model = load_model(LSTM_model_path)
-lstm_scaler = "/home/danny/Desktop/001254746_FYP_Code 1/001254746_FYP_Code/saved_models/LSTM_model_final_scaler.pkl"
+lstm_scaler = "LSTM_model_final_scaler.pkl"
 scaler_lstm = joblib.load(lstm_scaler)
 
 
