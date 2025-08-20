@@ -16,8 +16,8 @@ import numpy as np
 
 
 
-logo_sidebar = '/home/danny/Desktop/001254746_FYP_Code 1/001254746_FYP_Code/gui/VENY AI(6).png'
-logo_veny = '/home/danny/Desktop/001254746_FYP_Code 1/001254746_FYP_Code/gui/VENY AI.svg'
+logo_sidebar = '/home/danny/Desktop/001254746_FYP_Code 1/001254746_FYP_Code/gui/VENY_AI(6).png'
+logo_veny = '/home/danny/Desktop/001254746_FYP_Code 1/001254746_FYP_Code/gui/VENY_AI.svg'
 
 col1, col2, col3 = st.columns([1, 1, 1])
 with col2:
