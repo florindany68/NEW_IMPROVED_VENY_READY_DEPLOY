@@ -12,12 +12,15 @@ from tensorflow.keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler
 import yfinance as yf
 import numpy as np
+from pathlib import Path
+
+
 
 
 
 
 logo_sidebar = 'VENY_AI(6).png'
-logo_veny = 'VENY_AI.svg'
+logo_veny = Path(__file__).resolve().parent / "VENY_AI.svg"
 
 col1, col2, col3 = st.columns([1, 1, 1])
 with col2:
