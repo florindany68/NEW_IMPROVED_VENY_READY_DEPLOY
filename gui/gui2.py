@@ -15,8 +15,8 @@ import numpy as np
 
 
 
-logo_sidebar = 'VENY_AI(6).png'
-logo_veny = 'VENY_AI.svg'
+logo_sidebar = 'VENY AI(6).png'
+logo_veny = 'VENY AI.svg'
 
 col1, col2, col3 = st.columns([1, 1, 1])
 with col2:
