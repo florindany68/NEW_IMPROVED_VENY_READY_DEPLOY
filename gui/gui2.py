@@ -13,6 +13,8 @@ from sklearn.preprocessing import MinMaxScaler
 import yfinance as yf
 import numpy as np
 
+from pathlib import Path
+
 st.title("Hi, I'm Veny! Your AI assistant for investing")
 st.markdown(" I'm your assistant to help you enter into the vast world of investing. Choose your level your risk to"
             "get the most appropriate companies for you. "
@@ -32,7 +34,7 @@ scaler_path = "feature_scalerRF_Max.pkl"
 id_columns  = ['Industry', 'Sector', 'Company','Symbol']
 exclude_columns = id_columns + ['Risk Category', 'Risk Score']
 
-LSTM_model_path = "LSTM_model_final.keras"
+LSTM_model_path = keras.models.load_model(Path(__file__).resolve().parent / "LSTM_model_final.keras")
 prediction_model = load_model(LSTM_model_path)
 lstm_scaler = "LSTM_model_final_scaler.pkl"
 scaler_lstm = joblib.load(lstm_scaler)
