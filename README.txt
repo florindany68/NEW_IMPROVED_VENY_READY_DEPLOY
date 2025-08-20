@@ -1,14 +1,50 @@
-This is a README file which explains how to set up this application. 
+# VENY - Virtual Expert for New Investors
 
-The first step is to have the Python version of 3.11.6. This was the version which the application was developed. Python 3.13 is not going to work because the depedencies needed are not up to date, and the minimum version is 3.10. The full list of the requirements are saved as requirements.txt. Use pip install -r requirements.txt. The development was done using Ubuntu, but it should work cross platform if the python version is 3.11 
+VENY (Virtual Expert for New Investors) is a final year BSc Computer Science project developed at the University of Greenwich. 
+It aims to simplify the process of portfolio optimisation for beginner investors using Explainable AI (XAI) and modern machine learning techniques.
 
-The final user application is in the Graphical User Interface folder, with the assets used for designing it. The streamlit library is used, and is a dependency. For output, the following command is used in the command line: streamlit run gui2.py. if it does not work, use streamlit run (gui2.py path). 
+## 🎯 Project Goals
 
-Here is an example:
-streamlit run "/home/danny/Desktop/001254746_FYP_Code/Graphical User Interface/gui2.py"
+- Recommend stock portfolios based on user-selected risk tolerance (Low, Medium, High)
+- Forecast future stock returns using time series modeling
+- Provide transparent, human-readable explanations of model decisions using XAI
+- Deliver all functionality through a beginner-friendly web interface
+
+## 🧠 Key Features
+
+- **Random Forest Classifier** for company risk level classification
+- **LSTM Neural Network** for price return prediction
+- **SHAP & LIME** for model explanation
+- **Natural language explanations** generated via OpenAI GPT
+- **Interactive Streamlit UI** for ease of use
+
+## 🚀 Technologies Used
+
+- Python, Streamlit, scikit-learn, Keras (LSTM), SHAP, LIME, ChatGPT API
+
+## 📄 Report & Research
+
+This project was submitted as part of my dissertation for the BSc (Hons) Computer Science degree in 2025, supervised by Dr. Tuan Vuong
+
+## 🛠️ Setup Instructions
+
+1. Clone the repository  
+2. Create and activate a Python virtual environment  
+3. Install dependencies using `pip install -r requirements.txt`  
+4. Run the Streamlit app: `streamlit run app.py`
 
 
-The processed dataset was the output from the data_preprocessing, and the raw data was the initial dataset. The processed one is then used for the classification algorithm and in the final user interface. 
+## 📌 Disclaimer
 
-in the model folder, it can be found the saved models which were used, and in the src file, the python files can be found. 
-The first one being the preprocessing, Random Forest model, LSTM model and the classification testing, where it can be seen how explainable AI libraries are implemented
+This code is shared **for demonstration and educational purposes only**.  
+No investment advice is provided. Use at your own risk.
+
+## 👨‍💻 Author
+
+**Daniel-Florin Juravle**  
+BSc (Hons) Computer Science, Class of 2025  
+University of Greenwich
+
+---
+
+© 2025 Daniel-Florin Juravle | For demonstration purposes only (no license).
