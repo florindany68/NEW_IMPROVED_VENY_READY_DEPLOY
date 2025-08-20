@@ -16,13 +16,13 @@ import numpy as np
 
 
 
-logo_veny = 'gui/VENY_AI.svg'
-logo_sidebar = 'gui/veny_logo.png'
+logo_veny = 'gui/veny_logo.png'
+
 col1, col2, col3 = st.columns([1, 1, 1])
 with col2:
     st.image(logo_veny, width=300)
 
-st.logo(logo_veny, size='large', icon_image=logo_sidebar)
+st.logo(logo_veny, size='large')
 st.title("Hi, I'm Veny! Your AI assistant for investing")
 st.markdown(" I'm your assistant to help you enter into the vast world of investing. Choose your level your risk to"
             "get the most appropriate companies for you. "
