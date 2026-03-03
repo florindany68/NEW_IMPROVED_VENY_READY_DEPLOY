@@ -136,7 +136,7 @@ def open_api_explanaitions_specific_company(lime_file, specific_index):
     Explain, in simple day to day terms, why { specific_index } is a great pick for the user level of risk. """
     
     response = client.chat.completions.create(
-        model="gpt-5-nano-2025-08-07",
+        model="gpt-4-turbo-2024-04-09",
         messages=[
             {"role": "system",
              "content": "You are a financial advisor and you explain me what are the most important features based on the level of risk in very beginner terms"},
